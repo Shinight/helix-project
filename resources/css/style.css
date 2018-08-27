@@ -113,7 +113,7 @@ header {
 	padding-bottom: 3%;
 }
 #promo-table {
-	margin-left: 5%;
+	margin-left: 10%;
 }
 
 /* ------------------------------------------------ */
@@ -238,7 +238,6 @@ ion-icon {
 	width: 100%;
 }
 
-
 /* ------------------------------------------------ */
 /*                         FOOTER                   */
 /* ------------------------------------------------ */
@@ -273,6 +272,3 @@ footer .container .row {
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
-
-
-
