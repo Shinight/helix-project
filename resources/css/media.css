@@ -2,27 +2,38 @@
   h1 {
   	font-size: 2rem;
   }
-}
-@media all and (max-width: 768px) {
   h2 {
   	font-size: 1.5rem;
     letter-spacing: 0.5rem;
-    text-indent: 0.75rem;
+  }
+}
+@media all and (max-width: 576px) {
+  h1 {
+  	font-size: 1.5rem;
+  }
+    h2 {
+  	font-size: 1.5rem;
+    letter-spacing: 0.25rem;
   }
 }
 
 /* ------------------------------------------------ */
 /*                         PROMO                    */
 /* ------------------------------------------------ */
-@media screen and (max-width: 575px) {
+@media all and (max-width: 576px) {
   h3 {
-    font-size: 1.5rem;
-  }
-  td {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   #promo-table {
-	margin-left: 0;
+  	display: none;	
+  }
+  #promo-table-small {
+  	display: block;
+  	margin: 0 auto;
+  	padding-left: 1rem;
+  }
+  td {
+  	font-size: 
   }
 }
 
@@ -43,19 +54,83 @@
 /* -------------------- */
 /*      TESTIMONIAL     */
 /* -------------------- */
-@media all and (max-width: 576px) {
+@media all and (max-width: 768px) {
+  .carousel-content {
+  	word-spacing: 0;
+  	letter-spacing: 0;
+  	font-size: 0.95rem;
+  }
+}
+/*@media all and (max-width: 1400px) {
   .carousel-textbox {
     height: 80vh;
+  }
+}
+@media all and (max-width: 1024px) {
+  .carousel-textbox {
+    height: 70vh;
+  }
+}
+@media all and (max-width: 768px) {
+  .carousel-content {
+  	word-spacing: 0;
+  	letter-spacing: 0;
+  	font-size: 1rem;
+  	margin-top: 1rem;
+  }
+  .carousel-textbox {
+    height: 60vh;
+  }
+}
+@media all and (max-width: 576px) {
+  .testim-header {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+  .carousel-textbox {
+    height: 50vh;
   }
   .carousel-content {
   	word-spacing: 0;
   	letter-spacing: 0;
+  	font-size: 0.75rem;
+  }
+}*/
+/*@media all and (max-width: 576px) {
+  .testim-header {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+ }*/
+
+/* ------------------------------------------------ */
+/*                        CONTACT                   */
+/* ------------------------------------------------ */
+@media all and (max-width: 768px) {
+  .message h3,
+  .link h3 {
+    font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 576px) {
+  .link h3 {
+    padding-top: 2rem;
   }
 }
 
 /* ------------------------------------------------ */
 /*                         FOOTER                   */
 /* ------------------------------------------------ */
+@media all and (min-width: 768px) {
+  .w-100 {
+  	display: none;
+  }
+  .footer-list {
+  	margin: auto;
+  }
+  .footer-icon a {
+	float: right;
+}
 @media all and (max-width: 768px) {
   .company-data,
   .message {
@@ -69,6 +144,32 @@
   }
 }
 
+/* -------------------------- ACCOUNTING SUBPAGE ----------------------- */
+@media all and (max-width: 768px) {
+  .subpage-img {
+    display: none !important;
+  }
+  .counter {
+  	display: none;
+  }
+}
+
+/*@media all and (max-width: 1200px) {
+  .subpage-arrow-toleft {
+    margin-top:-30px;
+  }
+}*/
+@media all and (max-width: 992px) {
+	.subpage-arrow-toleft,
+	.subpage-arrow-toright {
+	display: none;
+	}
+}
+/*@media all and (max-width: 768px) {
+  .subpage-arrow-toleft {
+    display: none;
+  }
+}*/
 
 
 

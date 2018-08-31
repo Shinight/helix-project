@@ -45,10 +45,10 @@
 		        		<a class="nav-link" href="monitoring.html">Átvilágítás</a>
 		      		</li>
 		      		<li class="nav-item mr-3">
-		        		<a class="nav-link" href="about.html">Rólunk</a>
+		        		<a class="nav-link" href="#about">Rólunk</a>
 		      		</li>
 		      		<li class="nav-item mr-3">
-		        		<a class="nav-link" href="contact.html">Elérhetőségek</a>
+		        		<a class="nav-link" href="#contact">Kapcsolat</a>
 		      		</li>
 				</ul>
 		  	</div>
@@ -63,7 +63,7 @@
 	</header>
 
 <!-- ================ promo ===============	-->
-	<section id="promo">
+	<section class="container-fluid" id="promo">
 		<h3>Szolgáltatásainkkal kézben tarthatja és átláthatja pénzügyeit, legyen akár...</h3>
 		<table id="promo-table" class="table table-borderless">
 			<tbody>
@@ -77,10 +77,26 @@
 				</tr>
 			</tbody>
 		</table>
+		<table id="promo-table-small" class="table table-borderless">
+			<tbody>
+				<tr>
+					<td>egyéni vállalkozó</td>
+				</tr>
+				<tr>
+					<td>mikro vállalkozás</td>
+				</tr>
+				<tr>
+					<td>kisvállalkozás</td>
+				</tr>
+				<tr>
+					<td>középvállalkozás</td>
+				</tr>
+			</tbody>
+		</table>
 	</section>
 
 <!-- =============== services =============	-->
-	<section id="services">
+	<section class="container-fluid" id="services">
 		<h2>Szolgáltatásaink</h2>
 		<div class="container">
 			<div class="row">
@@ -90,7 +106,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque voluptatibus quae ea, facere suscipit! Dolorum temporibus fugiat, dolore assumenda officia dolores. Sequi quae possimus explicabo tempora perspiciatis voluptate? Debitis.</p>
 					<div>
 						<a class='btn btn-full' href="accounting.html">...</a>
-						<p id="more">Könyvelésről<br>bővebben</p>
+						<a href="accounting.html" id="more">Könyvelésről<br>bővebben</a>
 					</div>
 				</div>
 				<div class="col-md-4 col-12 text-center service-box">
@@ -99,7 +115,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque voluptatibus quae ea, facere suscipit! Dolorum temporibus fugiat, dolore assumenda officia dolores. Sequi quae possimus explicabo tempora perspiciatis voluptate? Debitis.</p>
 					<div>
 						<a class='btn btn-full' href="tax.html">...</a>
-						<p id="more">Adótanácsadásról<br>bővebben</p>
+						<a href="tax.html" id="more">Adótanácsadásról<br>bővebben</a>
 					</div>
 				</div>
 				<div class="col-md-4 col-12 text-center">
@@ -108,7 +124,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque voluptatibus quae ea, facere suscipit! Dolorum temporibus fugiat, dolore assumenda officia dolores. Sequi quae possimus explicabo tempora perspiciatis voluptate? Debitis.</p>
 					<div>
 						<a class='btn btn-full' href="monitoring.html">...</a>
-						<p id="more">Átvilágításról<br>bővebben</p>
+						<a href="monitoring.html" id="more">Átvilágításról<br>bővebben</a>
 					</div>
 				</div>
 			</div>
@@ -116,69 +132,74 @@
 	</section>
 
 <!-- ================= about =================	-->
-	<section id="about">
+	<section class="container-fluid" id="about">
 		<h2 class="white">Rólunk</h2>
 		<div class="container-fluid">
 			<div class="container container-about">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta impedit voluptatum corrupti ipsum, eum error laboriosam quo, consectetur non aperiam voluptas in, esse harum inventore est possimus fuga? Alias, aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nulla, id aspernatur, atque nihil qui illum adipisci asperiores officiis dicta impedit inventore cum omnis in consequatur eligendi at similique veniam! <br><br>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, libero placeat hic aliquid? Laboriosam similique porro eius accusamus! Ipsam autem, tempora laborum consectetur est quisquam repellat temporibus non nam dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias praesentium doloribus nam voluptatem quia officia aliquam expedita laudantium, maxime cumque, laborum adipisci in dolor perspiciatis, a facere dolores ad reiciendis.</p>
-				<div>
+<!-- 				<div>
 					<a class='btn btn-full' href="about.html">...</a>
-					<p id="more">Rólunk<br>bővebben</p>
-				</div>
+					<a href="about.html" id="more" class="white">Rólunk<br>bővebben</a>
+				</div> -->
 			</div>
 		</div>
 
 <!-- ============== testimonial ==============	-->
 <!-- Carousel -->
 		<div class="container">	
-		<h3 class="h3">Vélemények</h3>		
-			<div class="carousel slide" data-ride="carousel" id="testimonial">
+			<h3 class="testim-header">Vélemények</h3>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="carousel slide" data-ride="carousel" id="testimonial">
 <!-- Carousel indicators -->
-				<ul class="carousel-indicators">
-					<li data-target="#testimonial" data-slide-to="0" class="active"></li>
-					<li data-target="#testimonial" data-slide-to="1"></li>
-					<li data-target="#testimonial" data-slide-to="2"></li>
-					<li data-target="#testimonial" data-slide-to="3"></li>
-				</ul>
+						<ul class="carousel-indicators">
+							<li data-target="#testimonial" data-slide-to="0" class="active"></li>
+							<li data-target="#testimonial" data-slide-to="1"></li>
+							<li data-target="#testimonial" data-slide-to="2"></li>
+							<li data-target="#testimonial" data-slide-to="3"></li>
+						</ul>
 <!-- Carousel main -->
-				<div class="carousel-inner">
-					<div class="carousel-textbox shadow-box">
-						<div class="carousel-item active"">
-							<img src="resources/img/user1.png" alt="#">
-							<p class="carousel-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maiores ullam accusantium illum similique esse ipsa, eum recusandae numquam reiciendis vel tempora dignissimos totam doloremque quia, voluptas, rem quibusdam, sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, nulla atque. Veniam placeat tenetur odio quasi hic veritatis ut a.</p>
-							<p class="carousel-content username">Lucy Smith</p><p class="carousel-content userposition">director</p>
+						<div class="carousel-inner">
+							<div class="carousel-textbox shadow-box">
+								<div class="carousel-item col active">
+									<img src="resources/img/user1.png" alt="#">
+									<p class="carousel-content">Vállalkozásunk forgalmának növekedésével egyre több bejövő és kimenő számlát halmoz fel. Különböző pénznemek, különböző készletezési módszertan, változó mértékű kedvezmények miatt pénzügyeink egyre átláthatatlanabbak lettek. Amióta azonban a Gyurics Consulting Kft. végzi a főkönyvi munkálatok, napra és átlátható kész információink vannak a pénzügyi helyzetünkről!</p>
+									<p class="carousel-content username">Székely Natália</p><p class="carousel-content userposition">pénzügyi vezető</p>
+								</div>
+								<div class="carousel-item">
+									<img src="resources/img/user2.png" alt="#">
+									<p class="carousel-content">Nemrég induló vállalkozásomban sok pénzügyi nehézségem volt. Problémát jelentett számomra a különböző jogszabályok megismerése, értelmezése és betartása, továbbá a hatóságokkal való hatékony kapcsolattartás is nehezen ment. Egy ismerős javaslatára tanácsot kértem a Gyurics Consulting Kft-től, és azóta is örülök neki, hogy ez a fiatalos és lendületes csapat segít cégem pénzügyeit kézben tartani.</p>
+									<p class="carousel-content username">Németh Marcell</p><p class="carousel-content userposition">ügyvezető</p>
+								</div>
+								<div class="carousel-item">
+									<img src="resources/img/user3.png" alt="#">
+									<p class="carousel-content">Régóta dolgozom mérlegképes könyvelőként  egy helyi középvállalkozásnál. Több külső partnerrel, könyvelő irodával dolgoztunk már együtt az évek során. A Gyurics Consulting Kft. mégis kiemelkedik a többiek közül. Precíz, pontos munkájával és remek meglátásaival pénzügyeink menedzselését több területen is képes volt összefogni és hatékonyabbá tenni. Köszönjük!</p>
+									<p class="carousel-content username">Kecskés Mária</p><p class="carousel-content userposition">mérlegképes könyvelő</p>
+								</div>
+								<div class="carousel-item">
+									<img src="resources/img/user4.png" alt="#">
+									<p class="carousel-content">A Gyurics Consulting Kft. végzi cégem könyvelését a kezdetek óta. Munkájuk mindig alapos és tudásuk naprakészek a jogszabályi és hatósági előírások tekintetében. Nagyon örülök neki, hogy ők végzik cégem könyvelését, hiszen mindamellett, hogy pénzügyeimet biztonságban tudhatom, kollégáik nagyon kedvesek, és bármilyen kérdés esetén készséggel válaszolnak nekem, szükség esetén segítenek megoldani a problémáimat!</p>
+									<p class="carousel-content username">Balogh Dávid</p><p class="carousel-content userposition">tulajdonos</p>
+								</div>
+							</div>	
 						</div>
-						<div class="carousel-item">
-							<img src="resources/img/user2.png" alt="#">
-							<p class="carousel-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis suscipit aliquid recusandae quae doloribus, deleniti totam doloremque, modi cupiditate maxime laborum vitae ad officiis praesentium distinctio nesciunt consequatur eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ipsam consectetur facere sit, impedit reiciendis, est quod numquam!</p>
-							<p class="carousel-content username">Adam Klein</p><p class="carousel-content userposition">officer</p>
-						</div>
-						<div class="carousel-item">
-							<img src="resources/img/user3.png" alt="#">
-							<p class="carousel-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid eaque nulla, harum quasi ea dicta tempore qui saepe totam aperiam repellat eius nemo assumenda dolores omnis iste. Quaerat, provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error commodi reiciendis animi explicabo natus similique omnis ad voluptatum assumenda?</p>
-							<p class="carousel-content username">Maria Chole</p><p class="carousel-content userposition">financial assistant</p>
-						</div>
-						<div class="carousel-item">
-							<img src="resources/img/user4.png" alt="#">
-							<p class="carousel-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fugit deleniti dignissimos aperiam sed, dicta ipsum nobis similique recusandae quas incidunt culpa odit dolorem velit natus, maxime est ut officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id tempore ex similique inventore sunt. Harum sunt inventore, perspiciatis eos, voluptatibus neque, molestias, totam culpa.</p>
-							<p class="carousel-content username">David Bucket</p><p class="carousel-content userposition">accountant</p>
-						</div>
-					</div>	
-				</div>
 <!-- Carousel arrows -->
-				<a class="carousel-control-prev" href="#testimonial" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-				<a class="carousel-control-next" href="#testimonial" data-slide="next"><span class="carousel-control-next-icon"></span></a>
-			</div>
+						<a class="carousel-control-prev" href="#testimonial" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+						<a class="carousel-control-next" href="#testimonial" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+					</div>
+				</div>
+			</div>	
 		</div>
 	</section>
 
 <!-- ================ contact =================	-->
-	<section id="contact">
-		<h2>Elérhetőségek</h2>
+	<section class="container-fluid" id="contact">
+		<h2>Kapcsolat</h2>
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-sm-6 message">
+					<h3>Üzenet küldés</h3>
 					<p>Küldjön nekünk üzenetet, és munkatársunk felveszi Önnel a kapcsolatot!</p>
 					<form action="/action_page.php" method="post" target="_self">
 						<div class="form-group row">
@@ -207,6 +228,7 @@
 					</form>
 				</div>
 				<div class="col-sm-6 link">
+					<h3>Elérhetőségek</h3>
 					<div class="company-data">
 						<p><strong>Iroda: </strong>	7621 Pécs Irgalmasok utcája 5.</p>
 						<p><strong>Telefonszám: </strong><a href="tel:+36-20/666-7302">+36-20/666-7302</a></p>
@@ -228,18 +250,61 @@
 		<div class="container">
 			<div class="row">
 				<div class="footer-list col">
-					<a href="#">Adatvédelmi nyilatkozat</a><br>
-					<a href="#">Általános szerződési feltételek</a>
+<!-- Modal 1 -->
+					<a data-toggle="modal" href="#gprs">Adatkezelési tájékoztató</a>
+					<div class="modal fade" id="gprs" tabindex="-1" role="dialog" aria-labelledby="gprsTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="gprsTitle">Adatkezelési tájékoztató</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ullam laudantium reprehenderit non voluptatum aspernatur neque natus voluptate deleniti mollitia, praesentium itaque aliquam. Iste iusto aspernatur a vitae officiis ducimus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt similique, repellat tempore pariatur. Deserunt atque dignissimos quasi delectus amet dolores voluptas odio odit ut deleniti, dolorum, inventore ipsum, pariatur enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, blanditiis maxime distinctio ab natus hic, itaque dolore voluptatem est sunt officia odio ullam harum nostrum numquam deleniti sit quibusdam a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint corrupti sapiente cupiditate ipsa eaque corporis maxime dolorem aliquid, modi atque voluptas sunt eligendi, doloremque at molestias ducimus, neque. Error, vitae!
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezárás</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<br>
+<!-- Modal 2 -->
+					<a data-toggle="modal" href="#contract">Általános szerződési feltételek</a>
+					<div class="modal fade" id="contract" tabindex="-1" role="dialog" aria-labelledby="contractTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="contractTitle">Általános szerződési feltételek</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ullam laudantium reprehenderit non voluptatum aspernatur neque natus voluptate deleniti mollitia, praesentium itaque aliquam. Iste iusto aspernatur a vitae officiis ducimus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt similique, repellat tempore pariatur. Deserunt atque dignissimos quasi delectus amet dolores voluptas odio odit ut deleniti, dolorum, inventore ipsum, pariatur enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, blanditiis maxime distinctio ab natus hic, itaque dolore voluptatem est sunt officia odio ullam harum nostrum numquam deleniti sit quibusdam a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint corrupti sapiente cupiditate ipsa eaque corporis maxime dolorem aliquid, modi atque voluptas sunt eligendi, doloremque at molestias ducimus, neque. Error, vitae!
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezárás</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 				</div>
+				<div class="w-100"></div>
 				<div class="footer-icon col">
-					<a href="https://www.facebook.com/gyuricsconsulting/" class="ml-3" target="_blank">
-						<ion-icon name="logo-facebook"></ion-icon>
+					<a href="https://www.linkedin.com/company/gyurics-consulting/" target="_blank">
+						<ion-icon name="logo-linkedin"></ion-icon>
 					</a>
-					<a href="https://twitter.com/GyuricsC" class="ml-3" target="_blank">
+					<a href="https://www.instagram.com/gyuricsconsulting/" target="_blank">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
+					<a href="https://twitter.com/GyuricsC" target="_blank">
 						<ion-icon name="logo-twitter"></ion-icon>
 					</a>
-					<a href="https://www.instagram.com/gyuricsconsulting/" class="ml-3" target="_blank">
-						<ion-icon name="logo-instagram"></ion-icon>
+					<a href="https://www.facebook.com/gyuricsconsulting/" target="_blank">
+						<ion-icon name="logo-facebook"></ion-icon>
 					</a>
 				</div>
 			</div>
