@@ -220,7 +220,7 @@ ion-icon {
 /* ------------------------------------------------ */
 #contact {
 	background-color: #efefef; 
-	padding-bottom: 1rem;
+	padding-bottom: 2rem;
 }
 .message h3,
 .link h3 {
@@ -288,12 +288,6 @@ footer .container .row {
 }
 
 /* -------------------------- ACCOUNTING SUBPAGE ----------------------- */
-
-.second-nav {
-	margin-left: 422px;
-}
-
-
 /* ------------------------------------------------ */
 /*                        HEADER                    */
 /* ------------------------------------------------ */
@@ -304,7 +298,21 @@ footer .container .row {
     background-position: center;
     background-attachment: fixed;
 }
-.text-box-accounting { 
+.header-tax {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/main_tax.jpg); /* fekete átfedéshez */
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header-monitoring {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/main_monitoring.png); /* fekete átfedéshez */
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+.text-box-subpage { 
 	position: absolute;
 	top: 30%;
 	left: 14%;
@@ -317,10 +325,10 @@ footer .container .row {
 .h1-small {
 	font-size:1rem;
 	text-align: center;
-	padding: 0 20%;
+	padding: 0 10%;
 }
 .h1-big {
-	margin-top: 10rem;
+	margin-top: 80px;
 }
 
 /* ------------------------------------------------ */
@@ -391,6 +399,7 @@ footer .container .row {
 	font-family: 'Cormorant Garamond';
 	text-transform: uppercase;
 	padding: 1rem;
+	display: block;
 }
 .counter-box {
 	width: 300px;

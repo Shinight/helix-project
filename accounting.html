@@ -20,10 +20,10 @@
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/media.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#secondNav" data-offset="100">
 
 <!-- =============== navbar ===============	-->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 			  	<a class="navbar-brand" href="index.html">
@@ -35,8 +35,14 @@
 		  	</button>
 		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    	<ul class="navbar-nav ml-auto">
-		      		<li class="nav-item mr-3">
-		        		<a class="nav-link active" href="accounting.html">Könyvelés </a>
+		      		<li class="nav-item dropdown mr-3">
+		        		<a class="nav-link dropdown-toggle active" href="accounting.html" data-toggle="dropdown">Könyvelés </a>
+		        		<div class="dropdown-menu">
+							<a href="#why" class="dropdown-item">Miért</a>
+							<a href="#how" class="dropdown-item">Hogyan</a>
+							<a href="#what" class="dropdown-item">Mit</a>
+							<a href="#who" class="dropdown-item">Kinek</a>
+						</div>
 		      		</li>
 		      		<li class="nav-item mr-3">
 		        		<a class="nav-link" href="tax.html">Adótanácsadás</a>
@@ -54,32 +60,12 @@
 		  	</div>
 	  	</div>
 	</nav>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    	<ul class="navbar-nav second-nav" >
-		      		<li class="nav-item mr-3">
-		        		<a class="nav-link" href="#why">Miért</a>
-		      		</li>
-		      		<li class="nav-item mr-3">
-		        		<a class="nav-link" href="#how">Hogyan</a>
-		      		</li>
-		      		<li class="nav-item mr-3">
-		        		<a class="nav-link" href="#what">Mit</a>
-		      		</li>
-		      		<li class="nav-item mr-3">
-		        		<a class="nav-link" href="#who">Kinek</a>
-		      		</li>
-				</ul>
-		  	</div>
-	  	</div>
-	</nav>
 
 <!-- =============== header ===============	-->
 
 	<header class="container-fluid header-accounting" id="accounting">
-		<div class="text-box-accounting">
-			<h1 class="h1-small">Az ügyfelek számára nem főkönyvi kivonatot és bevallásokat akarunk adni,<br>hanem nyugalmat és kiszámíthatóságot.</h1><br><h1 class="h1-big">Az ember a vállalkozás mögött az igazi ügyfelünk.</h1>
+		<div class="text-box-subpage">
+			<h1 class="h1-small">Az ügyfelek számára nem főkönyvi kivonatot és bevallásokat akarunk adni, hanem nyugalmat és kiszámíthatóságot.</h1><br><h1 class="h1-big">Az ember a vállalkozás mögött az igazi ügyfelünk.</h1>
 		</div>
 	</header>
 
@@ -90,13 +76,13 @@
 			<span>Miért</span>
 		</p>
 		<div class="row">
-			<div class="col-md subpage-img">
+			<div class="col-md subpage-img d-none d-md-block">
 				<img src="resources/img/newspaper.jpg" alt="business newspaper">
 			</div>
 			<div class="col-md subpage-text">
 				<p class="animated fadeInRight">A legfontosabb feladatunk, hogy a ránk bízott cégek tulajdonosai, alkalmazottai számára egy nyugodt, kiszámítható környezetet teremtsünk. Tisztában vagyunk vele, milyen vállalkozónak lenni, és tudjuk, hogy egy apró, kiszámíthatatlan tényező is mekkora károkat tud okozni. Az igazi ügyfelünk a tulajdonosok a vállalkozások mögött, az ő boldogulásuk az igazi célunk.</p>
 				<div class="col subpage-img">
-					<img class="col-md-6 subpage-arrow-toleft" src="resources/img/left.png" alt="arrow-to-left">
+					<img class="col-md-6 subpage-arrow-toleft d-none d-lg-block" src="resources/img/left.png" alt="arrow-to-left">
 				</div>
 			</div>
 		</div>
@@ -110,11 +96,11 @@
 		<div class="row">
 			<div class="col-md subpage-text">
 				<p class="animated fadeInRight">Nem egyszerűen arra törekszünk, hogy a legfontosabb jogszabályokkal tisztában legyünk a számvitel, az adózás vagy a bérszámfejtés területén, ezzel ma nem lehet kitűnni. A precizitás olyan erény, amivel szintén minden könyvelőnek rendelkeznie kell. Cégünk amellett, hogy a szakma standardjait követi, a XXI. század elérhető technológiai újításai segítségével fejleszti a mindennapi munkát, és testreszabjuk a szolgáltatásunkat minden partnerünk részére. Élen járunk az automatizálásban, célunk a lehetőségek szerinti teljes digitalizáció, hogy ezzel is több időnk maradjon ügyfeleink egyéb kéréseinek megfelelni.</p>
-				<div class="col-md-6 subpage-arrow-toright">
+				<div class="col-md-6 subpage-arrow-toright d-none d-lg-block">
 					<img src="resources/img/right.png" alt="arrow-to-right">
 				</div>
 			</div>
-			<div class="col-md subpage-img">
+			<div class="col-md subpage-img d-none d-md-block">
 				<img src="resources/img/sign.jpg" alt="signing">
 			</div>
 		</div>
@@ -126,13 +112,13 @@
 			<span>Mit</span>
 		</p>
 		<div class="row">
-			<div class="col-md subpage-img">
+			<div class="col-md subpage-img d-none d-md-block">
 				<img src="resources/img/dresscode.jpg" alt="dresscode">
 			</div>
 			<div class="col-md subpage-text">
 				<p class="animated fadeInRight">Alapszolgáltatásunk a vállalkozás számviteli és adózási ügyeinek intézése. Ebbe beletartozik a bizonylatok feldolgozása, a bevallások és az évzárás elkészítése. Szintén általánosan ellátjuk partnereink bérszámfejtési feladatait. A kapcsolatunk részét képezi az is, hogy a fenti alapszolgáltatásokhoz kapcsolódóan folyamatos tanácsadást nyújtunk.</p>
 				<div class="col subpage-img">
-					<img class="col-md-6 subpage-arrow-toleft" src="resources/img/left.png" alt="arrow-to-left">
+					<img class="col-md-6 subpage-arrow-toleft d-none d-lg-block" src="resources/img/left.png" alt="arrow-to-left">
 				</div>
 			</div>
 		</div>
@@ -147,11 +133,11 @@
 			<div class="col-md subpage-text">
 				<p class="animated fadeInRight">A legtöbb tapasztalatot főleg nagyobb vagy épp növekedésnek induló vállalkozások számára nyújtott munkáink, tanácsaink során szereztünk. Ennek megfelelően alakult ki cégünk profilja is, mely szerint elsősorban kis- és középvállalkozások számára nyújtunk szolgáltatásokat.
 				Az ügyfélkörünk alakulása folytán úgy szakosodtunk, hogy értéket teremteni mikrovállalkozások, őstermelők, egyéb szervezetek számára nem tudunk. </p>
-				<div class="col-md-6 subpage-arrow-toright">
+				<div class="col-md-6 subpage-arrow-toright d-none d-lg-block">
 					<img src="resources/img/right.png" alt="arrow-to-right">
 				</div>
 			</div>
-			<div class="col-md subpage-img">
+			<div class="col-md subpage-img d-none d-md-block">
 				<img src="resources/img/table.jpg" alt="table">
 			</div>
 		</div>

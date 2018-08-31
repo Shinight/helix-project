@@ -59,49 +59,12 @@
   	word-spacing: 0;
   	letter-spacing: 0;
   	font-size: 0.95rem;
+  	line-height: 40px;
   }
 }
-/*@media all and (max-width: 1400px) {
-  .carousel-textbox {
-    height: 80vh;
-  }
+@media (max-width: 380px) { 
+	.carousel-textbox {height: 750px;}
 }
-@media all and (max-width: 1024px) {
-  .carousel-textbox {
-    height: 70vh;
-  }
-}
-@media all and (max-width: 768px) {
-  .carousel-content {
-  	word-spacing: 0;
-  	letter-spacing: 0;
-  	font-size: 1rem;
-  	margin-top: 1rem;
-  }
-  .carousel-textbox {
-    height: 60vh;
-  }
-}
-@media all and (max-width: 576px) {
-  .testim-header {
-    font-size: 1.5rem;
-    letter-spacing: 0.5rem;
-  }
-  .carousel-textbox {
-    height: 50vh;
-  }
-  .carousel-content {
-  	word-spacing: 0;
-  	letter-spacing: 0;
-  	font-size: 0.75rem;
-  }
-}*/
-/*@media all and (max-width: 576px) {
-  .testim-header {
-    font-size: 1.5rem;
-    letter-spacing: 0.5rem;
-  }
- }*/
 
 /* ------------------------------------------------ */
 /*                        CONTACT                   */
@@ -144,32 +107,22 @@
   }
 }
 
-/* -------------------------- ACCOUNTING SUBPAGE ----------------------- */
-@media all and (max-width: 768px) {
-  .subpage-img {
-    display: none !important;
-  }
+/* -------------------------------  SUBPAGE ------------------------------ */
+@media all and (min-width: 992px) {
+	.h1-big {
+	font-size: 3rem;
+	margin-top: 110px;
+	}
+	.h1-small {
+	  padding: 0 20%;
+	}
+}
+@media (max-width: 768px) {
   .counter {
   	display: none;
   }
 }
 
-/*@media all and (max-width: 1200px) {
-  .subpage-arrow-toleft {
-    margin-top:-30px;
-  }
-}*/
-@media all and (max-width: 992px) {
-	.subpage-arrow-toleft,
-	.subpage-arrow-toright {
-	display: none;
-	}
-}
-/*@media all and (max-width: 768px) {
-  .subpage-arrow-toleft {
-    display: none;
-  }
-}*/
 
 
 
